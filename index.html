@@ -15,7 +15,7 @@
   <script src = "js/script.js">
   </script>
   </head>
-  <body>
+  <body onload="show();">
   <span style="color: black; font-size:50px" id="time">00:00:00:000</span>
   <br>
   <select class="request" name="request" id="description" required="">
@@ -24,10 +24,30 @@
     <option value="hard">Hard</option>
   </select>
   <br>
-  <input type="submit" value="Click to start" class="btn" onclick = "startMath()";>
+  <input type="submit" value="Click to start" class="btn" onclick = "startMath(description.value)";>
   <div>
-  <div id = "question1">? + ? =</div> <input type = "text">
-  </div>
+  <span id = "question1">? + ? =</span> <input type = "text" size = "6">
+  <br>
+  <span id = "question2">? + ? =</span> <input type = "text" size = "6">
+  <br>
+  <span id = "question3">? + ? =</span> <input type = "text" size = "6">
+  <br>
+  <span id = "question4">? + ? =</span> <input type = "text" size = "6">
+  <br>
+  <span id = "question5">? + ? =</span> <input type = "text" size = "6">
+  <br>
+  <span id = "question6">? + ? =</span> <input type = "text" size = "6">
+  <br>
+  <span id = "question7">? + ? =</span> <input type = "text" size = "6">
+  <br>
+  <span id = "question8">? + ? =</span> <input type = "text" size = "6">
+  <br>
+  <span id = "question9">? + ? =</span> <input type = "text" size = "6">
+  <br>
+  <span id = "question10">? + ? =</span> <input type = "text" size = "6">
+  <br>
 
+  </div>
+ <!--  use reset(); start(); startMath(); with the button  -->
   </body>
 </html>
