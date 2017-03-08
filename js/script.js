@@ -113,7 +113,7 @@ function easyDif ()
 		document.getElementById(questionNum).innerHTML = randomNum1 + " + " + randomNum2 + " =   " ;
 		correctAnswers[i]=(randomNum1+randomNum2);
 	}	
-	alert(correctAnswers);
+	//alert(correctAnswers);
 }
 function medDif()
 {
@@ -125,8 +125,8 @@ function hardDif()
 }
 function stopMath()
 {
-	answerNum = "";
-	counterCorrect = 0;
+	var answerNum = "";
+	var counterCorrect = 0;
 	for (i=0;i<=9;i++)
 	{
 		answerNum="text"+(i+1);
@@ -139,17 +139,18 @@ function stopMath()
 			numCorrect[i] = false;
 		}
 	}
-	alert(numCorrect);
+	//alert(numCorrect);
 	for (j=0;j<=9;j++)
 	{
-		if(numCorrect[i] == true)
+		if(numCorrect[j] === true)
 		{
 			counterCorrect++;
 		}
 	}
+	//alert(counterCorrect);
 	if (counterCorrect == 10)
 	{
-		document.getElementById("outputDiv").innerHTML = "Congradulations you've got 10/10 correct!"
+		document.getElementById("outputDiv").innerHTML = "Congradulations you've got 10/10 correct!";
 	}
 	else
 	{
