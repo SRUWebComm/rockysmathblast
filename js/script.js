@@ -87,10 +87,6 @@ function startMath(difficulty)
 	{
 		easyDif();
 	}
-	else if (difficulty == "medium")
-	{
-		medDif();
-	}
 	else if (difficulty == "hard")
 	{
 		hardDif();
@@ -115,7 +111,7 @@ function easyDif ()
 	}	
 	//alert(correctAnswers);
 }
-function medDif()
+function hardDif()
 {
 	var i = 1;
 	var randomNum1
@@ -129,10 +125,6 @@ function medDif()
 		document.getElementById(questionNum).innerHTML = randomNum1 + " x " + randomNum2 + " =   " ;
 		correctAnswers[i]=(randomNum1*randomNum2);
 	}	
-}
-function hardDif()
-{
-
 }
 function stopMath()
 {
@@ -167,4 +159,5 @@ function stopMath()
 	{
 		document.getElementById("outputDiv").innerHTML = "You've got " + counterCorrect + " out of 10 correct";
 	}
+	document.getElementById("timeTest").innerHTML = $time.innerHTML;
 }

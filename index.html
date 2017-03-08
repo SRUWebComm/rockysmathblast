@@ -20,11 +20,10 @@
   <br>
   <select class="request" name="request" id="description" required="">
     <option value="easy">Easy</option>
-    <option value="medium">Medium</option>
     <option value="hard">Hard</option>
   </select>
   <br>
-  <input type="submit" value="Click to start" class="btn" onclick = "startMath(description.value)";>
+  <input type="submit" value="Click to start" class="btn" onclick = "startMath(description.value); reset(); start();">
   <!--  use reset(); start(); startMath(); with the button  -->
   <div>
   <span id = "question1">? + ? =</span><input type = "text" size = "6" id ="text1">
@@ -49,9 +48,9 @@
   <br>
 
   </div>
-  <input type="submit" value="Click to stop" class="btn" onclick = "stopMath()";>
+  <input type="submit" value="Click to stop" class="btn" onclick = "stop(); stopMath()";>
  
- <div id = "outputDiv">
- </div>
+ <div id = "outputDiv"></div>
+ <div id ="timeTest"></div>
 </body>
 </html>
