@@ -117,7 +117,18 @@ function easyDif ()
 }
 function medDif()
 {
-
+	var i = 1;
+	var randomNum1
+	var randomNum2
+	var questionNum = "";
+	for (i=0;i<=9;i++)
+	{
+		randomNum1 = Math.floor(Math.random()*(10)+1);
+		randomNum2 = Math.floor(Math.random()*(10)+1);
+		questionNum = "question"+(i+1);
+		document.getElementById(questionNum).innerHTML = randomNum1 + " x " + randomNum2 + " =   " ;
+		correctAnswers[i]=(randomNum1*randomNum2);
+	}	
 }
 function hardDif()
 {
